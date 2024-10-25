@@ -2,10 +2,9 @@
   "name": "crud",
   "version": "1.0.0",
   "main": "app.js",
- "scripts": {
-  "test": "npx jest"
-},
-
+  "scripts": {
+    "test": "npx jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
