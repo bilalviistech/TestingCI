@@ -31,8 +31,4 @@ jobs:
       - name: Run tests
         run: ./node_modules/.bin/jest
 
-      - name: Run tests
-        run: npx test
 
-        #env:
-         # CI: true # Set CI environment variable to true
