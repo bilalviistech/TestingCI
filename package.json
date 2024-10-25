@@ -2,9 +2,10 @@
   "name": "crud",
   "version": "1.0.0",
   "main": "app.js",
-  "scripts": {
-    "test": "jest"
-  },
+ "scripts": {
+  "test": "jest --setupFilesAfterEnv=C:/Users/Muhammd Bilal/Desktop/crud/jest.setup.js"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
