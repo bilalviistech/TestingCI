@@ -15,23 +15,23 @@ describe('CRUD API Tests', () => {
     itemId = res.body._id; // Save the ID for further tests
   }, 60000);
 
-  // it('should retrieve all items', async () => {
-  //   const res = await request(app).get('/api/items');
-  //   expect(res.statusCode)
-  //   expect(Array.isArray(res.body))
-  // }, 60000);
+  it('should retrieve all items', async () => {
+    const res = await request(app).get('/api/items');
+    expect(res.statusCode)
+    expect(Array.isArray(res.body))
+  }, 60000);
 
-  // it('should update an item', async () => {
-  //   const res = await request(app)
-  //     .put(`/api/items/${itemId}`)
-  //     .send({ name: 'Updated Test Item' });
-  //   expect(res.statusCode)
-  //   expect(res.body.name)
-  // }, 60000);
+  it('should update an item', async () => {
+    const res = await request(app)
+      .put(`/api/items/${itemId}`)
+      .send({ name: 'Updated Test Item' });
+    expect(res.statusCode)
+    expect(res.body.name)
+  }, 60000);
 
-  // it('should delete an item', async () => {
-  //   const res = await request(app).delete(`/api/items/${itemId}`);
-  //   expect(res.statusCode)
-  //   expect(res.body.message)
-  // },60000);
+  it('should delete an item', async () => {
+    const res = await request(app).delete(`/api/items/${itemId}`);
+    expect(res.statusCode)
+    expect(res.body.message)
+  },60000);
 });
